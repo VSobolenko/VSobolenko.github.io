@@ -129,6 +129,11 @@
 
       document.body.appendChild(script);
 
+function SendDataToGameView(param1) {  
+  console.log("YES")
+  cacheUnityInstance.SendMessage("UniWebViewBridge","OnReceiveFromHub", param1); 
+}
+
     </script>
   </body>
 </html>
